@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biglietteria</title>
+    <script type="text/javascript" src="calcoli.js"></script>
+    
+
+
+    <style>
+        body{
+            background-color: rgb(247, 149, 250);
+        }
+        .centro{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+      }
+
+
+      p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;  font-size: 20px;
+      }
+      </style>
+
+
+</head>
+
+<body>
+    <img src="../images/treno.png"  class="centro">
+    <form>
+        <p>inserire numero di chilometri da percorrere Km:</p> 
+        <input type="number" id="idkmetri"  min="0">km
+       
+        <p>inseire numero di posti:
+            <select id="posti" >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </p>
+
+
+        
+        <input type="radio" id="c1" name="classe" >
+        <label for="c1">Prima Classe</label><br>
+
+
+        <input type="radio" id="c2" name="classe" >
+        <label for="c2">Seconda Classe</label><br>
+        
+        <p><input type="button" value="Compra" onclick="compra()"></p><br>
+
+
+        <p id="ris"> </p>
+
+    </form>
+</body>
+
+</html>
