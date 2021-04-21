@@ -33,10 +33,10 @@
 </head>
 
 <body>
-    <img src="titolo.png"  class="centro">
+    <img src="../images/pesoForma.png"  class="centro">
 <form>
 
-<p>La tua altezza<input type="text" id="altezza">cm.</p>
+<p>La tua altezza<input type="number" id="altezza">cm.</p>
 <p>Il tuo Sesso:
     <select id="sesso" >
         <option>maschio</option>
@@ -45,11 +45,15 @@
         
     </select>
 </p>
-<p>La tua età<input type="text" id="eta">anni.</p><br>
+<p>La tua età<input type="number" id="eta">anni.</p><br>
 
-<pre>Formula di Lorenz                                             PESO FORMA<input type="text" id="eta">kg.</pre><br>
+<pre>Formula di Lorenz                                             PESO FORMA<input type="label" id="lorenz">kg.</pre>
+<pre>Formula di Broca                                             PESO FORMA<input type="label" id="broca">kg.</pre>
+<pre>Formula di wan de vael                                             PESO FORMA<input type="label" id="wan">kg.</pre>
+<pre>Formula di BMI                                             PESO FORMA<input type="label" id="bmi">kg.</pre>
 
-
+<input type="button" class="testo" id="calcola" value="Calcola peso forma" onclick="calcola()">
+<input type="reset" class="testo" value="Resetta i campi">
 
 
 
