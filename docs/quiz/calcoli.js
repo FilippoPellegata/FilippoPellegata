@@ -8,7 +8,7 @@ function elabora()
     var punteggio=0;
     if(!controllaCampi(cognome,nome,giorno,mese,anno))
     {
-        //controllo le risposte alle domande
+       
         if(document.getElementById("risposta1").value=="SQL")
             punteggio++;
         if(document.getElementById("risposta2").value=="2")
@@ -21,8 +21,8 @@ function elabora()
             punteggio++;
         if(document.getElementById("risposta5").value=="1 byte")
             punteggio++;
-        //visualizzo la somma dei punti
-        document.getElementById("punteggio").innerHTML=punteggio.toString();
+        
+        document.getElementById("punteggio").innerHTML=punteggio;
     }
     else
         alert("Campi non inseriti o inseriti non correttamente!");
