@@ -1,4 +1,4 @@
-function Compra(form) {
+function Compra() {
     var km = document.getElementById("idkmetri").value;
     var classe, costoBiglietto, costoTot;
 

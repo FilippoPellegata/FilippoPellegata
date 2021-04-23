@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="../Alternanza/java.js"></script>
+        <style>
+            body{
+                background-color: rgb(177, 211, 84);
+            }
+        h1{
+            font-size: 30px;
+            font-weight:bold;
+            text-align: center;
+            color: rgb(206, 33, 33);
+            
+        }
+          
+            h2{
+                color:rgb(37, 37, 37);
+                font-family: fantasy;
+                font-size: 30px;
+                margin-left: 10%;
+            }
+            a{
+                font-weight:bold;
+                font-family: sans-serif;
+                color: rgb(235, 99, 20);
+                
+            }
+            li{
+                color: rgb(37, 37, 37);
+            }
+            .centro{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+      }
+      .domande{
+                background-color:rgb(87, 128, 122);
+                margin-left: 520px;
+                 width: 45%;
+                 padding: 15px;
+                 border: solid rgb(32, 65, 130);
+                 display:table;
+                
+            }
+    .spiegazione{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+                 padding-left: 15px;
+                 padding-right: 15px;
+                 border:solid rgb(235, 149, 20);
+                 display:table;
+    }
+
+            
+            
+        </style>
+    </head>
+
+
+    <body>
+        <table>
+            <tbody>
+                <img src="../images/alternanza.png"  class="centro"><br><br>
+                <tr>
+                    <td class="colonna" id="info">
+                        
+                    </td>
+                    <div class=spiegazione>
+                    <h1 onclick="mostraS()">Cos'è l'attività PCTO</h1>
+                    <p>L’Alternanza scuola-lavoro, la cui denominazione a seguito dell'Art.57, comma 18 della Legge di BILANCIO 2019 è stata rinominata P.C.T.O.,  
+                        è una modalità didattica innovativa, che attraverso l’esperienza pratica aiuta a consolidare le conoscenze acquisite a scuola e testare sul campo le attitudini
+                         di studentesse e studenti, ad arricchirne la formazione e a orientarne il percorso di studio e, 
+                         in futuro di lavoro, grazie a progetti in linea con il loro piano di studi.</p>
+                    </div>
+
+                    <td class="domande">
+                        <div id="domande">
+                            <ol>
+                                <li style="font-weight: bold;" onclick="m1()">Le attività di Alternanza Scuola Lavoro sono aggiuntive rispetto all’orario delle lezioni?</li>
+                                <p id="p1" hidden="hidden">
+                                    Le attività di Alternanza scuola lavoro possono essere svolte all’interno del<br>
+                                     ore annuale delle lezioni o durante la sospensione delle attività<br>
+                                    didattiche, secondo il progetto formativo elaborato dalla singola istituzione<br>
+                                    scolastica, che avrà preliminarmente valutato la formula organizzativa più<br>
+                                    adeguata per venire incontro alle esigenze del territorio, dei propri allievi e<br>
+                                    della disponibilità delle strutture ospitanti ad accogliere gli studenti in<br>
+                                    Alternanza. A tal proposito, la Guida operativa per le scuole emanata da<br>
+                                    questo Ministero mette in evidenza che “sulla base del progetto, messo a<br>
+                                    punto dalla scuola in collaborazione con i soggetti ospitanti, l’inserimento<br>
+                                    degli alunni nei contesti operativi può essere organizzato, tutto o in parte,<br>
+                                    nell’ambito dell’orario annuale dei piani di studio oppure nei periodi di<br>
+                                    sospensione delle attività didattiche”
+                                </p>
+                                <li style="font-weight: bold;" onclick="m2()">Gli studenti sono obbligati a svolgere le attività in Alternanza scuola lavoro?</li>
+                                <p id="p2" hidden="hidden">
+                                    Sì, i periodi di apprendimento mediante esperienze di lavoro, anche se<br>
+                                    realizzati in periodi diversi da quelli fissati dal calendario delle lezioni, sono<br>
+                                    parte integrante del curricolo dello studente e sono oggetto di verifica e<br>
+                                    valutazione da parte del consiglio di classe, con una ricaduta sulla<br>
+                                    valutazione finale dello studente.
+                                </p>
+                                <li style="font-weight: bold;" onclick="m3()">Le attività di Alternanza incidono sulla frequenza alle lezioni?</li>
+                                <p id="p3" hidden="hidden">
+                                    L'Alternanza può essere svolta sia all'interno del monte ore annuale delle<br>
+                                    lezioni, sia in momenti diversi da quelli fissati dal calendario, per esempio di<br>
+                                    pomeriggio o anche d'estate, soprattutto nei casi in cui le strutture ospitanti<br>
+                                    sono caratterizzate da attività stagionali. Nell'ipotesi in cui i periodi di<br>
+                                    Alternanza si svolgano durante l'attività didattica, essi concorrono, oltre che<br>
+                                    ai fini del raggiungimento del monte ore previsto dal progetto di Alternanza, anche<br>
+                                    al calcolo del limite minimo di frequenza delle lezioni, pari ad almeno tre quarti <br>
+                                    dell'orario annuale personalizzato. Qualora, invece, i periodi di Alternanza si svolgano, <br>
+                                    del tutto o in parte, durante la sospensione delle attività didattiche, la presenza <br>
+                                    dell'allievo registrata presso la struttura ospitante concorre alla validità del solo <br>
+                                    percorso di Alternanza , che richiede la frequenza di almeno tre quarti del monte ore previsto <br>
+                                    dal progetto.
+                                </p>
+                                <li style="font-weight: bold;" onclick="m4()">È prevista una personalizzazione dei progetti di Alternanza scuola lavoro che tenga conto degli interessi degli studenti?</li>
+                                <p id="p4" hidden="hidden">
+                                    Le indicazioni fornite alle scuole attraverso la Guida operativa del MIUR suggeriscono <br>
+                                    di evitare di applicare nei progetti di Alternanza modelli standardizzati, concepiti <br>
+                                    per percorsi identici per tutti, bensì di adeguare i progetti alle esigenze specifiche degli <br>
+                                    studenti, che spesso esprimono bisogni formativi differenziati. Ciò è particolarmente <br>
+                                    rilevante nel caso delle esperienze interculturali collegate alla frequenza di periodi didattici <br>
+                                    in altri Paesi o ad attività sportive agonistiche che richiedono un impegno particolarmente <br>
+                                    oneroso. L'Alternanza entra a tutti gli effetti nel curricolo personalizzato dello studente e, <br>
+                                    più in generale, della scuola che, attraverso le proprie scelte e le forme di collaborazione <br>
+                                    sviluppate con il territorio, esprime e valorizza la propria autonomia didattica e organizzativa. <br>
+                                    Per queste ragioni, il progetto o i progetti di Alternanza elaborati dalla scuola sono inseriti <br>
+                                    all'interno del piano dell'offerta formativa triennale, che assicura sia l'unitarietà del progetto <br>
+                                    messo a punto dall'istituzione scolastica, sia la specifica declinazione e attuazione a cura dei <br>
+                                    singoli Consigli di classe, che dovranno predisporre i singoli percorsi formativi personalizzati <br>
+                                    riservati ai propri alunni, tenuto conto delle loro attitudini, interessi e stili cognitivi, e, <br>
+                                    infine, valutarne gli esiti, dopo aver acquisito gli elementi forniti dal tutor esterno sulla base <br>
+                                    degli strumenti predisposti e condivisi.
+                                </p>
+                                <li style="font-weight: bold;" onclick="m5()">I periodi di apprendimento all'estero possono essere compresi nelle esperienze di Alternanza?</li>
+                                <p id="p5" hidden="hidden">
+                                    Tenuto conto dell'indubbio valore formativo che un periodo di formazione all'estero rappresenta <br>
+                                    per uno studente della scuola secondaria di 2° grado sotto il profilo personale, culturale e <br>
+                                    professionale, è opportuno che la scuola frequentata dal giovane in Italia personalizzi il progetto <br>
+                                    di Alternanza scuola lavoro valorizzando all'interno del relativo percorso triennale di Alternanza <br>
+                                    scuola lavoro le esperienze e le competenze maturate all'estero, evitando di applicare nel loro <br>
+                                    progetto di Alternanza un modello standardizzato, concepito per percorsi di Alternanza inseriti <br>
+                                    nel calendario scolastico e ritagliato sulle esigenze di studenti che frequentano regolarmente le <br>
+                                    lezioni all'interno dell'istituto di appartenenza. Le modalità con cui inserire l'esperienza <br>
+                                    realizzata all'estero nel progetto di Alternanza possono essere varie ed è opportuno affidare <br>
+                                    all'autonomia della singola istituzione scolastica la scelta degli strumenti progettuali ed <br>
+                                    organizzativi più efficaci per dare visibilità alle competenze acquisite dall'allievo anche <br>
+                                    rispetto alla loro spendibilità nel mondo del lavoro e delle professioni, utilizzando le più <br>
+                                    opportune forme di flessibilità didattica e organizzativa per personalizzare il progetto triennale <br>
+                                    di Alternanza.
+                                </p>
+                                <li style="font-weight: bold;" onclick="m6()">I corsi professionalizzanti frequentati autonomamente dagli studenti a proprie spese possono essere compresi nel monte ore riservato alle esperienze di Alternanza scuola lavoro?</li>
+                                <p id="p6" hidden="hidden">
+                                    L'Alternanza, in quanto metodologia didattica, si svolge sotto la responsabilità della scuola, fa parte del percorso curricolare ed è fondata su alcuni elementi specifici <br>
+                                    che la distinguono da altre esperienze formative, pur validissime, organizzate dalla scuola o praticate autonomamente dagli allievi. L'Alternanza scuola lavoro,<br>
+                                     tra l'altro, prevede una convenzione tra scuola e struttura ospitante che, in relazione al progetto formativo condiviso, regola i rapporti e le responsabilità dei diversi soggetti coinvolti,<br>
+                                      compresi gli aspetti relativi alla tutela della salute e della sicurezza nei luoghi di lavoro da parte dei partecipanti. La convenzione, inoltre, <br>
+                                      indica le figure tutoriali che accompagnano il percorso formativo dello studente, la durata delle esperienze e la loro scansione temporale, <br>
+                                      le attività che il giovane dovrà svolgere all'interno della struttura ospitante, coerenti con gli obiettivi del progetto formativo condiviso con la scuola <br>
+                                      e con i risultati di apprendimento previsti dal profilo educativo dell'indirizzo di studi.
+                                </p>
+
+                                <li style="font-weight: bold;" onclick="m7()">Le attività di Alternanza possono essere sviluppate all'interno dell'azienda agraria annessa all'istituzione scolastica?</li>
+                                <p id="p7" hidden="hidden">
+                                    L'azienda annessa all'istituto agrario offre molte opportunità formative per un apprendimento sviluppato in un contesto operativo reale. <br>
+                                    Lo stesso vale per i ristoranti didattici aperti al pubblico creati da alcuni istituti alberghieri. Per questa ragione, in un progetto triennale di Alternanza scuola<br>
+                                     lavoro, è possibile inserire anche queste esperienze; tuttavia, per completare la formazione "sul campo" degli studenti e far sviluppare una cultura d'impresa attraverso<br>
+                                     la conoscenza diretta delle realtà produttive del territorio, si suggerisce di completare la formazione anche con attività svolte presso imprese esterne.<br>
+                                </p>
+
+                                <li style="font-weight: bold;" onclick="m8()">Come conciliare le attività di Alternanza organizzate dalla scuola in orario pomeridiano con la frequenza del Conservatorio?</li>
+                                <p id="p8" hidden="hidden">
+                                    Le attività di Alternanza possono essere sviluppate all'interno del monte ore annuale delle lezioni o durante la sospensione delle attività didattiche,<br>
+                                     secondo il progetto formativo autonomamente elaborato dalla singola istituzione scolastica, cui è affidato il compito di individuare<br> le formule organizzative più adeguate
+                                      per venire incontro alle esigenze del territorio, dei propri allievi e della disponibilità delle strutture ospitanti ad accogliere gli studenti in Alternanza. <br>
+                                      In un caso come questo sarebbe opportuno che la scuola mettesse a punto un progetto personalizzato che tenesse conto di tali impegni e di questa vocazione. <br>
+                                      Il progetto potrebbe essere sviluppato all'interno dell'orario delle lezioni o nei periodi di sospensione delle attività didattiche, <br>
+                                      anche valorizzando questa passione per la musica che si traduce in orientamento rispetto ad una specifica professione, <br>ovvero tenendo conto degli aspetti organizzativi che,
+                                       ad esempio, afferiscono alla realizzazione di eventi musicali.<br>
+                                </p>
+                                <li style="font-weight: bold;" onclick="m9()">Le associazioni sportive possono partecipare all'organizzazione dell'Alternanza scuola lavoro per gli studenti che praticano attività sportive agonistiche?</li>
+                                <p id="p9" hidden="hidden">
+                                    La Legge 107/2015, art.1, comma 34, tra i soggetti che possono accogliere gli studenti per i percorsi di Alternanza scuola lavoro, 
+                                    comprende "gli enti di promozione sportiva riconosciuti dal CONI", per cui il percorso formativo personalizzato dello studente impegnato in attività agonistiche,<br>
+                                     se adeguatamente calibrato sugli aspetti lavorativi della disciplina sportiva praticata, può rappresentare una esperienza di Alternanza scuola lavoro<br>
+                                      maturata in attività sportive, con una certificazione delle competenze acquisite. Oltre alle cd. soft skills, apprezzate in qualsiasi contesto lavorativo,<br>
+                                       i giovani atleti sviluppano competenze tecnico scientifiche legate alla salute, alla corretta alimentazione, ad apprendimenti scientifici legati all'attività praticata,<br>
+                                       che possono essere esplicitate all'interno della coprogettazione che la scuola può mettere a punto con la struttura ospitante. <br>
+                                       Naturalmente la scuola stipulerà la convenzione con la Federazione o l'associazione sportiva che ospita l'attività agonistica del giovane.<br>
+                                </p>
+                                <li style="font-weight: bold;" onclick="m10()">L'Alternanza scuola lavoro può essere sviluppata in collaborazione con un'associazione senza fini di lucro che non ha dipendenti assunti a tempo indeterminato?</li>
+                                <p id="p10" hidden="hidden">
+                                    Sì, l'Alternanza scuola lavoro può essere svolta anche presso enti no profit e associazioni di volontariato. <br>
+                                    L'opportunità di avvalersi della collaborazione con strutture del Terzo Settore è stata espressamente prevista dal decreto legislativo n.77/2005,<br>
+                                     al'art.1, comma 2.<br>
+                                </p>
+
+
+
+
+
+
+
+
+                            </ol>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

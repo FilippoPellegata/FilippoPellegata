@@ -6,8 +6,7 @@ function elabora()
     var mese=document.getElementById("mese").value;
     var anno=parseInt(document.getElementById("anno").value);
     var punteggio=0;
-    if(!controllaCampi(cognome,nome,giorno,mese,anno))
-    {
+   
        
         if(document.getElementById("risposta1").value=="SQL")
             punteggio++;
@@ -23,8 +22,7 @@ function elabora()
             punteggio++;
         
         document.getElementById("punteggio").innerHTML=punteggio;
-    }
-    else
-        alert("Campi non inseriti o inseriti non correttamente!");
+    
+    
 
 }
