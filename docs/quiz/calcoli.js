@@ -1,10 +1,5 @@
 function elabora()
 {
-    var cognome=document.getElementById("cognome").value;
-    var nome=document.getElementById("nome").value;
-    var giorno=parseInt(document.getElementById("giorno").value);
-    var mese=document.getElementById("mese").value;
-    var anno=parseInt(document.getElementById("anno").value);
     var punteggio=0;
    
        
@@ -14,15 +9,34 @@ function elabora()
             punteggio++;
         if(document.getElementById("r1").checked)
             punteggio++;
-        if(document.getElementById("c1").checked)
+        if(document.getElementById("c1").checked&&document.getElementById("c3").checked)
             punteggio++;
-        if(document.getElementById("c3").checked)
-            punteggio++;
+        
+            
         if(document.getElementById("risposta5").value=="1 byte")
             punteggio++;
         
         document.getElementById("punteggio").innerHTML=punteggio;
     
     
+
+}
+
+function UtenteConPunteggio(){
+    var utenteConPunteggio;
+    
+    utenteConPunteggio+=(document.getElementById("cognome").value).substring(0,3);
+
+    utenteConPunteggio+=(document.getElementById("nome").value).substring(0,3);
+
+    utenteConPunteggio+=(document.getElementById("mese").value).substring(0,3);
+    
+    utenteConPunteggio+=(document.getElementById("anno").value).substring(2,4);
+
+    utenteConPunteggio+=(parseInt(document.getElementById("punteggio").innerHTML)*10).toString();
+
+
+
+    document.getElementById("ucp").innerHTML=utenteConPunteggio;
 
 }
