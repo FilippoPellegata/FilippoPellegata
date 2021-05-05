@@ -1,37 +1,21 @@
-function creaPDF(){
+function creaPdf(){
+    var doc = new jsPDF();
 
-    var doc=new jsPDF();
-    doc.setFont("verdana");
-
-    doc.text(75,20,"Creare un pdf con javascript");
-    doc.text(20,30,"Questo file pdf");
-
-    doc.addPage();
-    doc.text(20,20,"Prima Pagina:");
-    var nome=document.getElementById("nome").value;
-    doc.text(20,20,"il nome \u00E8: "+nome);
-
-    var cognome=document.getElementById("cognome").value;
-    doc.text(20,20,"il cognome \u00E8: "+cognome);
-
-
-    var numero=document.getElementById("numero").value;
-    doc.text(20,20,"il numero \u00E8: "+numero);
-
-    var mail=document.getElementById("mail").value;
-    doc.text(20,20,"la mail \u00E8: "+mail);
-
-    var mess=document.getElementById("mess").value;
-    doc.text(20,20,"il messaggio \u00E8: "+mess);
+    doc.setFont("Verdana");
+    
+    doc.text(75, 20, 'Creare un PDF con JavaScript');
+    doc.text(20, 30, 'Questo file \u00E8 stato creato con JavaScript');
 
     doc.addPage();
-    doc.text(20,200,"fine documento");
+    doc.text(20, 20, 'Prima pagina');
+    doc.text(20, 30, 'Il nome \u00E8: ' + document.getElementById('nome').value)
+    doc.text(20, 40, 'Il cognome \u00E8: ' + document.getElementById('cognome').value)
+    doc.text(20, 50, 'Il numero \u00E8: ' + document.getElementById('numero').value)
+    doc.text(20, 60, 'L\' e-mail \u00E8: ' + document.getElementById('mail').value)
+    doc.text(20, 70, 'Il messaggio \u00E8: ' + document.getElementById('mess').value)
 
-    doc.save("pdfp.pdf");
+    doc.addPage();
+    doc.text(20, 280, 'Fine documento');
 
-
-
-
-
-
+    doc.save('filePDF.pdf');
 }
