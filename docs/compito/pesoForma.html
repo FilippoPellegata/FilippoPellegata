@@ -4,60 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Peso Forma</title>
-    <script type="text/javascript" src="../compito/calcoli.js"></script>
-    
+    <script type="text/javascript" src="../compito/script.js"></script>
+
 
 
     <style>
-        body{
+        body {
             background-color: rgb(247, 149, 250);
         }
-        .centro{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-      }
+        
+        .centro {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+        
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+        
+        pre {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+    </style>
 
-
-      p{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;  font-size: 20px;
-      }
-
-      pre{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;  font-size: 20px;
-    }
-      </style>
-    
 
 </head>
 
 <body>
-    <img src="../images/pesoForma.png"  class="centro">
-<form>
+    <img src="../images/pesoForma.png" class="centro">
+    <form>
 
-<p>La tua altezza<input type="number" id="altezza">cm.</p>
-<p>Il tuo Sesso:
-    <select id="sesso" >
+        <p>La tua altezza<input type="number" id="altezza">cm.</p>
+        <p>Il tuo Sesso:
+            <select id="sesso">
         <option>maschio</option>
         <option>femmina</option>
         <option>preferisco non definire</option>
         
     </select>
-</p>
-<p>La tua età<input type="number" id="eta">anni.</p><br>
+        </p>
+        <p>La tua età<input type="number" id="eta">anni.</p><br>
 
-<pre>Formula di Lorenz                                             PESO FORMA<input type="label" id="lorenz">kg.</pre>
-<pre>Formula di Broca                                             PESO FORMA<input type="label" id="broca">kg.</pre>
-<pre>Formula di wan de vael                                             PESO FORMA<input type="label" id="wan">kg.</pre>
-<pre>Formula di BMI                                             PESO FORMA<input type="label" id="bmi">kg.</pre>
+        <pre>Formula di Lorenz                                             PESO FORMA<input type="label" id="lorenz">kg.</pre>
+        <pre>Formula di Broca                                             PESO FORMA<input type="label" id="broca">kg.</pre>
+        <pre>Formula di wan de vael                                             PESO FORMA<input type="label" id="wan">kg.</pre>
+        <pre>Formula di BMI                                             PESO FORMA<input type="label" id="bmi">kg.</pre>
 
-<input type="button" class="testo" id="calcola" value="Calcola peso forma" onclick="calcola()">
-<input type="reset" class="testo" value="Resetta i campi">
+        <input type="button" class="testo" id="calcola" value="Calcola peso forma" onclick="calcola()">
+        <input type="reset" class="testo" value="Resetta i campi">
 
 
 
-</form>
+    </form>
 
 </body>
 
