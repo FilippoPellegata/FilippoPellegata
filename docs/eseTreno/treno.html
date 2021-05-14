@@ -5,37 +5,38 @@
     <meta charset="UTF-8">
     <title>Biglietteria</title>
     <script type="text/javascript" src="../eseTreno/calcoli.js"></script>
-    
+
 
 
     <style>
-        body{
+        body {
             background-color: rgb(247, 149, 250);
         }
-        .centro{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 10%;
-      }
-
-
-      p{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;  font-size: 20px;
-      }
-      </style>
+        
+        .centro {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+        }
+        
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+    </style>
 
 
 </head>
 
 <body>
-    <img src="../images/treno.png"  class="centro">
+    <img src="../images/treno.png" class="centro">
     <form>
-        <p>inserire numero di chilometri da percorrere Km:</p> 
-        <input type="number" id="idkmetri"  min="0">km
-       
+        <p>inserire numero di chilometri da percorrere Km:</p>
+        <input type="number" id="idkmetri" min="0">km
+
         <p>inseire numero di posti:
-            <select id="posti" >
+            <select id="posti">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -46,18 +47,18 @@
         </p>
 
 
-        
-        <input type="radio" id="c1" name="classe" >
+
+        <input type="radio" id="c1" name="classe">
         <label for="c1">Prima Classe</label><br>
 
 
-        <input type="radio" id="c2" name="classe" >
+        <input type="radio" id="c2" name="classe">
         <label for="c2">Seconda Classe</label><br>
-        
+
         <p><input type="button" value="Compra" onclick="Compra()"></p><br>
 
 
-        <p id="ris"> </p>
+        <output type="text" id="ris"> </output>
 
     </form>
 </body>
