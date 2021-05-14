@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <title>Biglietteria</title>
     <script type="text/javascript" src="../quiz/calcoli.js"></script>
-    
+
     <link rel="stylesheet" href="style.css">
 
-    
+
 
 
 </head>
 
 <body>
-    <img src="../images/quiz.png"  class="centro">
+    <img src="../images/quiz.png" class="centro">
     <form>
-        <p>Dati anagrafici:</p> 
-       Cognome: <input type="text" id="cognome"> Nome:<input type="text" id="nome"><br><br>
-       
-    
-       <p>Data di nascita:</p>
-       giorno:<input type="text" id="giorno">mese:
-            <select id="mese" >
+        <p>Dati anagrafici:</p>
+        Cognome: <input type="text" id="cognome"> Nome:<input type="text" id="nome"><br><br>
+
+
+        <p>Data di nascita:</p>
+        giorno:<input type="text" id="giorno">mese:
+        <select id="mese">
                 <option>GEN</option>
                 <option>FEB</option>
                 <option>MAR</option>
@@ -35,49 +35,41 @@
                 <option>OTT</option>
                 <option>NOV</option>
                 <option>DIC</option>
-            </select>
+            </select> anno:
 
-            anno:<input type="number" id="anno"><br><br>
-            
-        
-        <fieldset > <legend>Domande:</legend> 
-        
-        Qual è il linguaggio di programmazione usato per creare e modificare i database:<br>
-        <input type="text" id="risposta1"><br><br>
+        <input type="number" id="anno"><br><br>
 
-        Quali valori può assumere una variabile boolean:<br>
-        <select id="risposta2" >
+
+        <fieldset>
+            <legend>Domande:</legend>
+
+            Qual è il linguaggio di programmazione usato per creare e modificare i database:<br>
+            <input type="text" id="risposta1"><br><br> Quali valori può assumere una variabile boolean:<br>
+            <select id="risposta2">
             <option>1</option>
             <option>2</option>
             <option>4</option>
             <option>256</option>
-        </select><br><br>
-        
-        Quali sono le librerie caricate a run-time?<br>
-        <input type="radio" id="r1" name="classe">
-        <label for="r1">Statiche</label><br>
-        <input type="radio" id="r2" name="classe">
-        <label for="r2">Dinamiche</label><br><br>
-        
+        </select><br><br> Quali sono le librerie caricate a run-time?<br>
+            <input type="radio" id="r1" name="classe">
+            <label for="r1">Statiche</label><br>
+            <input type="radio" id="r2" name="classe">
+            <label for="r2">Dinamiche</label><br><br> Quali tra queste sono parole chiavi in c++?<br>
+            <input type="checkbox" id="c1" name="classe2">
+            <label for="c1">void</label><br>
+            <input type="checkbox" id="c2" name="classe2">
+            <label for="c2">integer</label><br>
+            <input type="checkbox" id="c3" name="classe2">
+            <label for="c3">char</label><br><br> 8bit corrispondono a:<br>
+            <input type="text" id="risposta5"><br><br>
 
-        Quali tra queste sono parole chiavi in c++?<br>
-        <input type="checkbox" id="c1" name="classe2">
-        <label for="c1">void</label><br>
-        <input type="checkbox" id="c2" name="classe2">
-        <label for="c2">integer</label><br>
-        <input type="checkbox" id="c3" name="classe2">
-        <label for="c3">char</label><br><br>
-        
+        </fieldset>
+        <input type="button" value="elabora" onclick="elabora()"> &nbsp&nbsp <input type="reset" value="cancella"><br><br>
 
-        8bit corrispondono a:<br>
-        <input type="text" id="risposta5"><br><br>
+        <fieldset style="width: 24%; float:left">
+            <legend>Esito</legend>
 
-        </fieldset>    
-        <input type="button" value="elabora" onclick="elabora()"> &nbsp&nbsp <input type="reset" value="cancella" ><br><br>
-        
-        <fieldset style="width: 24%; float:left"><legend>Esito</legend>
-        
-        punteggio: <output type="text" id="punteggio">
+            punteggio: <output type="text" id="punteggio">
         </fieldset>
          
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="button" value="Utente con punteggio:" onclick="UtenteConPunteggio()" style="width: 10%;" >&nbsp&nbsp<output type="text" id="ucp">
@@ -86,70 +78,3 @@
 </body>
 
 </html>
-
-
-var c = document.getElementById('lavagna');
-
-  const Ox=c.width/2;   //ascissa origine
-  const Oy=c.height/2;  //ordinata origine
-  const u = 20;         //unità di misura
-  var ctx=c.getContext("2d");
-  ctx.strokeStyle="rgba(120,120,120,0.5)"
-  ctx.fillStyle="rgba(120,120,120,0.5)"
-  
-  ctx.moveTo(20,Oy);  // punto di partenza
-  ctx.lineTo(c.width-20,Oy);  //asse x
-  ctx.moveTo(c.width-20,Oy-4);  //punta asse x
-  ctx.lineTo(c.width-20,Oy+4);
-  ctx.lineTo(c.width-12,Oy);
-  ctx.lineTo(c.width-20,Oy-4); //fine punta asse x
-  ctx.moveTo(Ox,20);  //coordinate punto di partenza
-  ctx.lineTo(Ox,c.height-20);  //asse y
-
-  ctx.moveTo(Ox-4,20);  //punta asse y
-  ctx.lineTo(Ox+4,20);
-  ctx.lineTo(Ox,12);
-  ctx.lineTo(Ox-4,20); //fine punta asse y
-  
-  ctx.stroke();  //disegna
-
-  ctx.fillStyle="red"//colore freccia
-  ctx.fill() //riempimento frecce
-
-  ctx.fillStyle="rgb(0,0,0)"
-
-  // scrive x, y, O, u
-  ctx.fillText('x',c.width-20,Oy+10)
- ctx.fillText('y',Ox+5,20)
- ctx.fillText('O',Ox+2,Oy+10)
- ctx.fillText('1',Ox-10,Oy-5);
-
-
-
- var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-
-        ctx.beginPath();
-        ctx.arc(120, 100, 40, 0, 2 * Math.PI);
-        ctx.strokeStyle="rgba(0,0,255,1)";//blu 
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(160, 150, 40, 0, 2 * Math.PI);
-        ctx.strokeStyle="yellow";//giallo 
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(200, 100, 40, 0, 2 * Math.PI);
-        ctx.strokeStyle="black";//nero 
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(240, 150, 40, 0, 2 * Math.PI);
-        ctx.strokeStyle="green";//verde 
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(280, 100, 40, 0, 2 * Math.PI);
-        ctx.strokeStyle="rgba(255,0,0,1)";//rosso 
-        ctx.stroke();

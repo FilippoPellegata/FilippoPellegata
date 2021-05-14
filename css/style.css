@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(177, 211, 84);
+    background: radial-gradient(circle at 100%, rgb(35, 202, 231) 0%, rgb(72, 219, 27) 100%);
+    background-size: 500% 500%;
+    animation: animazione 10s ease-out infinite;
+}
+
+@keyframes animazione {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h2 {
+    color: rgb(37, 37, 37);
+    font-family: fantasy;
+    font-size: 30px;
+}
+
+a {
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(235, 99, 20);
+}
+
+li {
+    color: rgb(37, 37, 37);
+}
+
+#centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    color: rgb(69, 24, 95);
+    text-decoration: none;
+    transition: text-decoration 0.7s;
+}
+
+.centro2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    animation-name: initial;
+}
+
+td {
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(162, 253, 185);
+}
+
+tr {
+    border: 1px solid black;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.classe3 {
+    border: 1px solid Black;
+}
