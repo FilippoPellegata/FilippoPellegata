@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Canvas 2</title>
+
+<script type="text/javascript">
+    //crea figura
+    function creaFigura(){
+        
+
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(120, 100, 40, 0, 2 * Math.PI);
+        ctx.strokeStyle="rgba(0,0,255,1)";//blu 
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(160, 150, 40, 0, 2 * Math.PI);
+        ctx.strokeStyle="yellow";//giallo 
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(200, 100, 40, 0, 2 * Math.PI);
+        ctx.strokeStyle="black";//nero 
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(240, 150, 40, 0, 2 * Math.PI);
+        ctx.strokeStyle="green";//verde 
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(280, 100, 40, 0, 2 * Math.PI);
+        ctx.strokeStyle="rgba(255,0,0,1)";//rosso 
+        ctx.stroke();
+
+        
+
+        
+
+        
+        
+    }
+
+
+
+</script>
+
+</head>
+
+
+<body>
+        <h1>semicerchio</h1>
+<form>
+    <input type="button" id="btn" value="disegna" onclick="creaFigura()">
+    
+ </form>       
+ <br> 
+<canvas id="myCanvas" width="400" height="300" style="border:1px solid #b81818">
+    your browser does not support the HTML canvas tag
+</canvas>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

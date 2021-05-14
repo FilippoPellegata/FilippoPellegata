@@ -1,8 +1,16 @@
 function elabora()
 {
     var punteggio=0;
+    var cognome=document.getElementById("cognome").value;
    
-       
+       for(var i=0;i<cognome.length;i++){
+            
+        if(cognome.charAt(i)!=cognome.charAt(i).toUpperCase()){
+            alert("Cognome va scritto tutto in maiuscolo");
+            break;
+        }
+
+       }
         if(document.getElementById("risposta1").value=="SQL")
             punteggio++;
         if(document.getElementById("risposta2").value=="2")
@@ -18,12 +26,12 @@ function elabora()
         
         document.getElementById("punteggio").innerHTML=punteggio;
     
-    
+       
 
 }
 
 function UtenteConPunteggio(){
-    var utenteConPunteggio;
+    var utenteConPunteggio="";
     
     utenteConPunteggio+=(document.getElementById("cognome").value).substring(0,3);
 

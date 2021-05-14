@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ripasso</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- https://creativecode.it/articoli/canvas-html-impara-a-creare-forme-e-grafiche-avanzate/ -->
+  </head>
+  <body>
+    <!-- FORM -->
+
+    <h1>FORM</h1>
+    <form>
+      <fieldset>
+        <legend>Domande</legend>
+        <label for="nome">Inserisci nome:</label>
+        <input type="text" name="nome" id="nome" />
+        <br />
+        <br />
+        <label for="cognome">Inserisci cognome:</label>
+        <input type="text" name="cognome" id="cognome" />
+        <br />
+        <br />
+        <!-- Select Box -->
+        <label for="paese">Scegli dove sei nato</label>
+        <select name="paese" id="paese">
+          <option value="" disabled selected>Select your option...</option>
+          <option value="erba">erba</option>
+          <option value="lecco">lecco</option>
+          <option value="como">como</option>
+        </select>
+        <br />
+        <br />
+        <!-- Radio button -->
+        <label for="sesso">Inserisci il sesso:</label>
+        <input type="radio" name="sesso" id="sesso" />M
+        <input type="radio" name="sesso" id="sesso" />F
+        <br />
+        <br />
+        <!-- Check Box -->
+        <label for="nascita">Inserisci giorno di nascita</label>
+        <input type="checkbox" name="nascita" id="nascita" />Oggi
+        <input type="checkbox" name="nascita" id="nascita" />Ieri
+        <input type="checkbox" name="nascita" id="nascita" />Domani
+        <br />
+        <br />
+        <!-- Bottoni -->
+        <input type="button" value="Seleziona" onclick="submit()" />
+        <!-- Bottone cancella -->
+        <input type="reset" />
+        
+      </fieldset>
+      <button type="button" onclick="creaPDF()">Seleziona2</button>
+    </form>
+    <br>
+    <br>
+    <!-- DISEGNO -->
+    <h1>DISEGNO</h1>
+    <canvas
+      id="myCanvas"
+      width="600"
+      height="500"
+      style="border: 1px solid #000"
+    >
+    </canvas>
+    <br>
+    <br>
+    <button type="button" onclick="Disegna()">Disegna</button>
+  </body>
+</html>
